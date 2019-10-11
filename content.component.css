@@ -1,0 +1,33 @@
+.content-container{
+    width: 100%;
+}
+.mr100{
+    margin-right: 200px;
+    align-items: flex-start;
+    display: flex;
+}
+.mr100 span{
+    margin-right: 30px;
+}
+.logo{
+    widows: 100%;
+    text-align: right;
+
+}
+.btnAddWidget{
+    background:#34d8eb;
+    color: #fff;
+    border:none;
+    margin-right: 20px;
+}
+.container-repeat{
+    display: inline-block;
+}
+.widget1, .widget2, .widget3{
+    width: 400px;
+    height: 300px;
+    border: 1px solid #ccc;
+    margin: 20px 20px;
+    padding: 20px;
+}
+.widget p{display: none;}

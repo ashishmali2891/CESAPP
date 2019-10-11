@@ -1,0 +1,68 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  div.form {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .login-form {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    /* margin-left: auto;
+        margin-right: auto; */
+    /* text-align: left; */
+
+    /* margin: 0 auto; */
+  }
+
+  .btnSignIn {
+    width: 100%;
+    /* display: flex;
+      flex-wrap: wrap; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .signIn-form-btn {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 54px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 72px;
+  }
+
+  .email {
+    text-align: center;
+  }
+
+  .password {
+    text-align: center;
+  }
+</style>
+<div class="form">
+  <form class="login-form">
+    <div><input class="email" type="text" name="email" [(ngModel)]="username" placeholder="Email"></div>
+    <div><input class="password" type="password" name="pass" [(ngModel)]="password" placeholder="Password"></div>
+    <div class="btnSignIn">
+      <button (click)="LoginServer()" class="signIn-form-btn">
+        Sign in
+      </button>
+    </div>
+  </form>
+
+</div>

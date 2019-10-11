@@ -1,0 +1,43 @@
+<div class="content-container">
+    <div class="flex-container d-flex">
+        <div class="mr100">
+            <span>Dashboard Version <br>
+                v1
+            </span>
+            <button class="btnSave" (click)="save()">Save</button>
+        </div>
+        <div class="d-flex">
+            <button class="btnAddWidget" (click)="copy()">Add Widget</button>
+            <div>
+                <form>
+                    From: <input type="date" name="From">
+                    To: <input type="date" name="To">
+                    <input type="submit">
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="widget">
+        <div class="container-repeat" *ngFor="let item of items">
+            <div class="widget1">
+                <div class= "logo">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+                <p>{{item}}</p>
+                <highcharts-chart [Highcharts]="Highcharts" [constructorType]="chartConstructor"
+                    [options]="chartOptions" [(update)]="updateFlag" style="width: 100%;display: block;">
+                </highcharts-chart>
+            </div>
+            <!-- <div class="widget2">
+            <highcharts-chart [Highcharts]="Highcharts" [constructorType]="chartConstructor" [options]="chartOptions"
+                [(update)]="updateFlag" style="width: 100%;display: block;"></highcharts-chart>
+        </div>
+
+        <div class="widget3">
+            <highcharts-chart [Highcharts]="Highcharts" [constructorType]="chartConstructor" [options]="chartOptions"
+                [(update)]="updateFlag" style="width: 100%;display: block;"></highcharts-chart>
+        </div> -->
+        </div>
+    </div>
+</div>
