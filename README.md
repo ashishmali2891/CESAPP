@@ -25,3 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+##For login authentication please use below command on terminal
+Run this on terminal 'json-server --watch db.json'
+
+#Login detail - 
+Email - admin
+password - admin
+
+#once CESApp compile successfully and run clear local storage and then do what ever you want to do.
+- inspect element and go to 'Application Tab' -> go to 'Local storage' -> right click on http://localhost:4200 and clear storage so you start with fresh entry.
+
